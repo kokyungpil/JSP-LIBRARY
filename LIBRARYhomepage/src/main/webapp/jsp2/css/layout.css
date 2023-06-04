@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	background-color: rgb(255, 255, 255);
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.menu {
+	position: fixed;
+	background-color: rgb(243, 170, 74);
+	padding: 10px;
+	font-size: 18px;
+	top: 0;
+	left: 0; /* Adjusted to align with the left edge */
+	width: 100%; /* Adjusted to fill the entire width */
+	height: 45px;
+	z-index: 3;
+}
+
+.menu-link {
+	color: #000000;
+	text-decoration: none;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+	background-color: rgb(12, 238, 42);
+	color: #fff;
+}
+
+.favorite-user-wrapper {
+	position: fixed;
+	background-color: rgb(243, 170, 74);
+	padding: 10px;
+	font-size: 18px;
+	top: 0px; /* Adjusted to align below the menu */
+	right: 0;
+	width: 20%; /* Adjusted to take 20% of the width */
+	height: 45px;
+	z-index: 4;
+}
+
+.content {
+	margin-top: 60px;
+	padding: 20px;
+}
+
+.mark-pic {
+	position: relative;
+	top: 65px;
+	left: 200px;
+	margin-bottom: 20px;
+}
+
+.book-search {
+	position: relative;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.search-container {
+	display: flex;
+	align-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+input[type="text"] {
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	outline: none;
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	background-color: rgb(243, 170, 74);
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: rgb(12, 238, 42);
+}
+
+.book-section-title {
+	text-align: center;
+}
+
+.book-images {
+	position: relative;
+	display: flex;
+	left : 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 25px;
+	justify-items: center;
+}
+
+.book-images img {
+	width: 70%;
+	height: auto;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(243, 170, 74);
+	padding: 20px;
+	text-align: center;
+}
+
+.loginbox {
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	width: 300px;
+	height: 250px;
+}
+
+.heading {
+	font-size: 30px;
+}
+
+.paragraph {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
